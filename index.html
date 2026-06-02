@@ -3,69 +3,247 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil Saya</title>
+    <title>Biodata Diri Lengkap</title>
 
     <style>
-        body {
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
+            background:#e9ecef;
+            padding:30px;
         }
 
-        .container {
-            width: 80%;
-            max-width: 700px;
-            margin: 50px auto;
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-            text-align: center;
+        .container{
+            max-width:900px;
+            background:white;
+            margin:auto;
+            border-radius:15px;
+            overflow:hidden;
+            box-shadow:0 4px 15px rgba(0,0,0,0.2);
         }
 
-        img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 20px;
+        .header{
+            background:#007bff;
+            color:white;
+            text-align:center;
+            padding:30px;
         }
 
-        h1 {
-            color: #333;
+        .header h1{
+            margin-bottom:10px;
         }
 
-        p {
-            color: #666;
-            font-size: 16px;
+        .foto{
+            text-align:center;
+            margin-top:20px;
         }
 
-        .info {
-            text-align: left;
-            margin-top: 20px;
+        .foto img{
+            width:180px;
+            height:180px;
+            border-radius:50%;
+            border:5px solid white;
+            object-fit:cover;
         }
 
-        .info p {
-            margin: 10px 0;
+        .content{
+            padding:30px;
+        }
+
+        h2{
+            margin-top:30px;
+            margin-bottom:15px;
+            color:#007bff;
+            border-bottom:2px solid #007bff;
+            padding-bottom:5px;
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+        }
+
+        td{
+            padding:12px;
+            border-bottom:1px solid #ddd;
+        }
+
+        td:first-child{
+            font-weight:bold;
+            width:35%;
+        }
+
+        ul{
+            margin-left:20px;
+        }
+
+        ul li{
+            margin-bottom:8px;
+        }
+
+        .footer{
+            text-align:center;
+            background:#f5f5f5;
+            padding:20px;
+            color:#666;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <img src="https://via.placeholder.com/150" alt="Foto Profil">
 
-        <h1>Universitas Surakarta</h1>
-        <p>Sistem Komputer</p>
+        <div class="header">
+            <h1>BIODATA DIRI</h1>
+            <p>Profil Lengkap Pribadi</p>
 
-        <div class="info">
-            <p><strong>Nama:</strong> Sandha Anugrah Panorama</p>
-            <p><strong>Umur:</strong> 21 Tahun</p>
-            <p><strong>Alamat:</strong> Sragen, Jawa Tengah</p>
-            <p><strong>Email:</strong> syantiedrts922@gmail.com</p>
-            <p><strong>Hobi:</strong> Gaming, Coding, Desain</p>
+            <div class="foto">
+                <img src="https://via.placeholder.com/180" alt="Foto Profil">
+            </div>
         </div>
+
+        <div class="content">
+
+            <h2>1. Data Pribadi</h2>
+
+            <table>
+                <tr>
+                    <td>Nama Lengkap</td>
+                    <td>Sandha Panorama</td>
+                </tr>
+                <tr>
+                    <td>Nama Panggilan</td>
+                    <td>Sandha</td>
+                </tr>
+                <tr>
+                    <td>Tempat, Tanggal Lahir</td>
+                    <td>Sragen, 01 Januari 2000</td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>Laki-laki</td>
+                </tr>
+                <tr>
+                    <td>Agama</td>
+                    <td>Islam</td>
+                </tr>
+                <tr>
+                    <td>Kewarganegaraan</td>
+                    <td>Indonesia</td>
+                </tr>
+                <tr>
+                    <td>Status</td>
+                    <td>Mahasiswa</td>
+                </tr>
+                <tr>
+                    <td>Alamat</td>
+                    <td>Sragen, Jawa Tengah</td>
+                </tr>
+                <tr>
+                    <td>No HP</td>
+                    <td>08xxxxxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>email@gmail.com</td>
+                </tr>
+            </table>
+
+            <h2>2. Riwayat Pendidikan</h2>
+
+            <ul>
+                <li>SD Negeri Contoh (2006 - 2012)</li>
+                <li>SMP Negeri Contoh (2012 - 2015)</li>
+                <li>SMA/SMK Negeri Contoh (2015 - 2018)</li>
+                <li>Perguruan Tinggi - Program Studi Informatika (2018 - Sekarang)</li>
+            </ul>
+
+            <h2>3. Hobi dan Minat</h2>
+
+            <ul>
+                <li>Bermain game</li>
+                <li>Desain grafis</li>
+                <li>Editing video</li>
+                <li>Mempelajari teknologi</li>
+                <li>Membaca artikel teknologi</li>
+                <li>Olahraga ringan</li>
+            </ul>
+
+            <h2>4. Kemampuan (Skill)</h2>
+
+            <ul>
+                <li>HTML dan CSS dasar</li>
+                <li>Microsoft Word</li>
+                <li>Microsoft PowerPoint</li>
+                <li>Canva Design</li>
+                <li>Editing Foto dan Video</li>
+                <li>Komunikasi dan kerja sama tim</li>
+            </ul>
+
+            <h2>5. Pengalaman</h2>
+
+            <ul>
+                <li>Membuat desain poster menggunakan Canva</li>
+                <li>Mengerjakan tugas proyek kampus</li>
+                <li>Membuat website sederhana menggunakan HTML</li>
+                <li>Berpartisipasi dalam kegiatan organisasi atau kelompok</li>
+            </ul>
+
+            <h2>6. Mata Kuliah Favorit</h2>
+
+            <ul>
+                <li>Pemrograman Web</li>
+                <li>Jaringan Komputer</li>
+                <li>Basis Data</li>
+                <li>Sistem Operasi</li>
+            </ul>
+
+            <h2>7. Cita-Cita</h2>
+
+            <p>
+                Menjadi seseorang yang sukses di bidang teknologi informasi,
+                memiliki kemampuan desain dan pengembangan sistem yang baik,
+                serta mampu memberikan manfaat bagi masyarakat.
+            </p>
+
+            <h2>8. Media Sosial</h2>
+
+            <table>
+                <tr>
+                    <td>Instagram</td>
+                    <td>@usernameanda</td>
+                </tr>
+                <tr>
+                    <td>Facebook</td>
+                    <td>Nama Facebook</td>
+                </tr>
+                <tr>
+                    <td>Discord</td>
+                    <td>username#0000</td>
+                </tr>
+                <tr>
+                    <td>GitHub</td>
+                    <td>github.com/username</td>
+                </tr>
+            </table>
+
+            <h2>9. Motto Hidup</h2>
+
+            <p>
+                "Belajar hari ini untuk masa depan yang lebih baik."
+            </p>
+
+        </div>
+
+        <div class="footer">
+            <p>© 2026 Biodata Diri | Dibuat menggunakan HTML & CSS</p>
+        </div>
+
     </div>
 
 </body>
